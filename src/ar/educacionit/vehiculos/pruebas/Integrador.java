@@ -8,6 +8,7 @@ package ar.educacionit.vehiculos.pruebas;
 import ar.com.educacionit.vehiculos.entidades.Auto;
 import ar.com.educacionit.vehiculos.entidades.Comprador;
 import ar.com.educacionit.vehiculos.entidades.Vendedor;
+import ar.educacionit.vehiculos.ventana.VentanaMaestra;
 
 /**
  *
@@ -33,6 +34,17 @@ public class Integrador {
                 ;
         
        
+        
+        VentanaMaestra v = new VentanaMaestra();
+
+        // Establece el tama�o
+        v.setSize(1024, 650);
+
+        // Establece que no se pueda modificar el tama�o de la ventana
+        v.setResizable(false);
+
+        // Establece la ventana como visible
+        v.setVisible(true);
     }
     
 }
